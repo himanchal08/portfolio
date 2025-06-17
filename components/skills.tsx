@@ -26,19 +26,14 @@ export default function Skills() {
     <section
       id="services"
       ref={ref}
-      className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
+      className="mb-10 sm:mb-16 max-w-full sm:max-w-[53rem] scroll-mt-20 text-center px-2 sm:px-6 md:px-8"
+      style={{ overflowX: "hidden" }}
     >
       <SectionHeading>Services Offered</SectionHeading>
-      <ul
-        className="flex flex-wrap justify-center 
-        gap-4 
-        text-lg text-gray-800"
-      >
+      <ul className="grid grid-cols-1 xs:grid-cols-2 sm:grid-cols-3 gap-3 sm:gap-4 md:gap-6 w-full max-w-2xl mx-auto overflow-x-hidden overflow-y-hidden">
         {skillsData.map((skill, index) => (
           <motion.li
-            className="bg-white border border/black[0.1] 
-            rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80 
-            dark:border-none "
+            className="bg-white border border-black/10 rounded-xl px-4 py-3 dark:bg-white/10 dark:text-white/80 dark:border-none text-sm sm:text-base md:text-lg shadow-sm flex items-center justify-center min-h-[3rem]"
             key={index}
             variants={fadeInAnimationsVariants}
             initial="initial"

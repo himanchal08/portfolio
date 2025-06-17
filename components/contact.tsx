@@ -45,7 +45,7 @@ export default function Contact() {
     <motion.section
       id="contact"
       ref={ref}
-      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
+      className="mb-12 sm:mb-20 md:mb-28 w-full max-w-full sm:max-w-[38rem] text-center px-2 sm:px-6 md:px-8"
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -53,7 +53,7 @@ export default function Contact() {
     >
       <SectionHeading>Contact me</SectionHeading>
 
-      <p className="text-gray-700 -mt-6 dark:text-white/80">
+      <p className="text-gray-700 -mt-4 dark:text-white/80 text-sm sm:text-base mb-4">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:himanchalkhattri@gmail.com">
           himanchalkhattri@gmail.com
@@ -64,11 +64,14 @@ export default function Contact() {
       <form
         ref={formRef}
         onSubmit={handleSubmit}
-        className="mt-10 flex flex-col gap-4 dark:text-black"
+        className="mt-4 flex flex-col gap-3 sm:gap-4 md:gap-6 w-full max-w-md mx-auto"
       >
         {/* Name */}
-        <div className="flex items-center gap-4">
-          <label htmlFor="name" className="w-24 font-medium text-white">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
+          <label
+            htmlFor="name"
+            className="w-24 font-medium text-white text-sm sm:text-base"
+          >
             Name
           </label>
           <input
@@ -76,13 +79,16 @@ export default function Contact() {
             name="name"
             required
             placeholder="Your name"
-            className="flex-1 h-12 px-4 rounded-lg border border-gray-300 dark:bg-white dark:bg-opacity-10 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+            className="w-full sm:flex-1 h-10 sm:h-12 px-3 sm:px-4 rounded-lg border border-gray-300 dark:bg-white dark:bg-opacity-10 dark:focus:bg-opacity-100 transition-all dark:outline-none text-sm sm:text-base"
           />
         </div>
 
         {/* Email */}
-        <div className="flex items-center gap-4">
-          <label htmlFor="senderEmail" className="w-24 font-medium text-white">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
+          <label
+            htmlFor="senderEmail"
+            className="w-24 font-medium text-white text-sm sm:text-base"
+          >
             Email
           </label>
           <input
@@ -91,13 +97,16 @@ export default function Contact() {
             required
             maxLength={500}
             placeholder="email@example.com"
-            className="flex-1 h-12 px-4 rounded-lg border border-gray-300 dark:bg-white dark:bg-opacity-10 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+            className="w-full sm:flex-1 h-10 sm:h-12 px-3 sm:px-4 rounded-lg border border-gray-300 dark:bg-white dark:bg-opacity-10 dark:focus:bg-opacity-100 transition-all dark:outline-none text-sm sm:text-base"
           />
         </div>
 
         {/* Message */}
-        <div className="flex items-start gap-4">
-          <label htmlFor="message" className="w-24 pt-2 font-medium text-white">
+        <div className="flex flex-col sm:flex-row items-start gap-2 sm:gap-4">
+          <label
+            htmlFor="message"
+            className="w-24 pt-2 font-medium text-white text-sm sm:text-base"
+          >
             Message
           </label>
           <textarea
@@ -106,12 +115,12 @@ export default function Contact() {
             maxLength={5000}
             rows={4}
             placeholder="Enter your message"
-            className="flex-1 p-4 rounded-lg border border-gray-300 dark:bg-[#f3f4f6] dark:bg-opacity-10 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+            className="w-full sm:flex-1 p-3 sm:p-4 rounded-lg border border-gray-300 dark:bg-[#f3f4f6] dark:bg-opacity-10 dark:focus:bg-opacity-100 transition-all dark:outline-none text-sm sm:text-base"
           />
         </div>
 
         {/* Submit Button */}
-        <div className="ml-[6.5rem]">
+        <div className="sm:ml-[6.5rem] mt-2 sm:mt-0">
           <SubmitBtn />
         </div>
       </form>
