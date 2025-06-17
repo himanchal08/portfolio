@@ -70,7 +70,7 @@ export default function Contact() {
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
           <label
             htmlFor="name"
-            className="w-24 font-medium text-white text-sm sm:text-base"
+            className="w-24 font-medium dark:text-white text-sm sm:text-base text-black"
           >
             Name
           </label>
@@ -79,7 +79,7 @@ export default function Contact() {
             name="name"
             required
             placeholder="Your name"
-            className="w-full sm:flex-1 h-10 sm:h-12 px-3 sm:px-4 rounded-lg border border-gray-300 dark:bg-white dark:bg-opacity-10 dark:focus:bg-opacity-100 transition-all dark:outline-none text-sm sm:text-base"
+            className="bg-transparent w-full sm:flex-1 h-10 sm:h-12 px-3 sm:px-4 rounded-lg border border-gray-300 dark:bg-white dark:bg-opacity-10  transition-all dark:outline-none text-sm sm:text-base"
           />
         </div>
 
@@ -87,7 +87,7 @@ export default function Contact() {
         <div className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-4">
           <label
             htmlFor="senderEmail"
-            className="w-24 font-medium text-white text-sm sm:text-base"
+            className="w-24 font-medium dark:text-white text-sm sm:text-base text-black"
           >
             Email
           </label>
@@ -97,7 +97,7 @@ export default function Contact() {
             required
             maxLength={500}
             placeholder="email@example.com"
-            className="w-full sm:flex-1 h-10 sm:h-12 px-3 sm:px-4 rounded-lg border border-gray-300 dark:bg-white dark:bg-opacity-10 dark:focus:bg-opacity-100 transition-all dark:outline-none text-sm sm:text-base"
+            className="w-full sm:flex-1 h-10 sm:h-12 px-3 sm:px-4 rounded-lg border border-gray-300 dark:bg-white dark:bg-opacity-10  transition-all dark:outline-none text-sm sm:text-base"
           />
         </div>
 
@@ -105,7 +105,7 @@ export default function Contact() {
         <div className="flex flex-col sm:flex-row items-start gap-2 sm:gap-4">
           <label
             htmlFor="message"
-            className="w-24 pt-2 font-medium text-white text-sm sm:text-base"
+            className="w-24 font-medium dark:text-white text-sm sm:text-base text-black"
           >
             Message
           </label>
@@ -115,7 +115,7 @@ export default function Contact() {
             maxLength={5000}
             rows={4}
             placeholder="Enter your message"
-            className="w-full sm:flex-1 p-3 sm:p-4 rounded-lg border border-gray-300 dark:bg-[#f3f4f6] dark:bg-opacity-10 dark:focus:bg-opacity-100 transition-all dark:outline-none text-sm sm:text-base"
+            className="w-full sm:flex-1 p-3 sm:p-4 rounded-lg border border-gray-300 dark:bg-[#f3f4f6] dark:bg-opacity-10 transition-all dark:outline-none text-sm sm:text-base"
           />
         </div>
 
