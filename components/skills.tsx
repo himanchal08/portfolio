@@ -7,21 +7,21 @@ import { useSectionInView } from "@/lib/hooks";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 const fadeInAnimationsVariants = {
-    initial: {
-      opacity: 0,
-      y: 100,
+  initial: {
+    opacity: 0,
+    y: 100,
+  },
+  animate: (index: number) => ({
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.08 * index,
     },
-    animate: (index: number) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        delay: 0.08 * index,
-      },
-    }),
+  }),
 };
 export default function Skills() {
-  const { ref } = useSectionInView("Skills");
-  
+  const { ref } = useSectionInView("Services");
+
   return (
     <section
       id="services"
@@ -29,7 +29,7 @@ export default function Skills() {
       className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
     >
       <SectionHeading>Services Offered</SectionHeading>
-      <ul 
+      <ul
         className="flex flex-wrap justify-center 
         gap-4 
         text-lg text-gray-800"
