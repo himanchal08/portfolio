@@ -25,11 +25,11 @@ export default function About() {
         <br />
         From building high-performance web apps, stunning landing pages, and
         seamless admin panels to crafting custom logos, UI/UX designs, SEO
-        optimization, and secure hosting — I handle it all so you don’t have to
+        optimization, and secure hosting I handle it all so you don’t have to
         juggle multiple freelancers. <br />
         <br />
         Whether you're a startup, brand, agency, or just an individual with a
-        vision — I help bring your ideas to life with clean code, smart design,
+        vision I help bring your ideas to life with clean code, smart design,
         and a touch of animation magic. <br />
         <br />I work across platforms like{" "}
         <span className="font-medium">WordPress</span>,{" "}
@@ -37,7 +37,7 @@ export default function About() {
         <span className="font-medium">Shopify</span> to build scalable, visually
         striking, and fully responsive websites. Combine that with{" "}
         <span className="font-medium">full-stack development</span> and top-tier
-        performance, and you get an online presence that not only looks great —
+        performance, and you get an online presence that not only looks great
         but actually works. <br />
         <br />
         <span className="font-semibold">
@@ -45,8 +45,8 @@ export default function About() {
         </span>
       </p>
       <p className="md:hidden sm:text-base text-gray-800 dark:text-white/80 sm:block">
-        I’m Himanchal — your all-in-one digital creator. Websites, apps, logos,
-        SEO, hosting — I do it all. From WordPress to Shopify to custom code — I
+        I’m Himanchal your all-in-one digital creator. Websites, apps, logos,
+        SEO, hosting I do it all. From WordPress to Shopify to custom code I
         build sleek, fast, responsive sites with stunning design & smooth
         animations. Let’s make something unforgettable.
       </p>
